@@ -6,9 +6,11 @@ header, section, main, footer, div {
   border: 1px solid red;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
+h1, h2, h3, h4, h5, h6, p, span, section {
   margin: 0;
   padding: 0;
+
+  border: 1px solid red;
 }
 
 .page {
@@ -17,6 +19,8 @@ h1, h2, h3, h4, h5, h6, p, span {
     margin: 0 auto; /* выше для экранов больше 1600px отцентрировали весь контент */
     font-family: 'Helvetica Neue', Arial, sans-serif;
   }
+
+  /* header */
 
   .header {
     margin: 0;
@@ -104,54 +108,100 @@ h1, h2, h3, h4, h5, h6, p, span {
     z-index: 0;
   }
 
-.description {
-  width: 80%;
-  display: flex;
-  margin: 100px auto;
-}
+  /* секция description */
 
-  .two-columns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .two-columns__main-text {
+  .description {
     width: 80%;
-    min-width: 784px;
+    display: flex;
+    margin: 100px auto;
   }
 
-  .two-columns__brief {
+    .two-columns {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .two-columns__main-text {
+      width: 80%;
+      min-width: 784px;
+    }
+
+    .two-columns__brief {
+      margin: 0;
+      padding: 0;
+      line-height: 1.2;
+      font-size: 18px;
+      font-weight: normal;
+      color: #2f80ed;
+      width: 175px;
+    }
+
+    .two-columns__paragraph {
+      margin: 0;
+      padding: 0;
+      line-height: 34px;
+      font-size: 24px;
+      font-weight: normal;
+    }
+
+    .two-columns__paragraph_top-bottom-margin {
+      margin: 30px 0;
+    }
+
+    .two-columns__span-accent {
+      margin: 30px 0;
+      padding: 0;
+      line-height: 34px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+  /* блоки заголовков */
+
+  .section-title {
     margin: 0;
     padding: 0;
-    line-height: 1.2;
-    font-size: 18px;
-    font-weight: normal;
-    color: #2f80ed;
-    width: 175px;
-  }
-
-  .two-columns__paragraph {
-    margin: 0;
-    padding: 0;
-    line-height: 34px;
-    font-size: 24px;
-    font-weight: normal;
-  }
-
-  .two-columns__paragraph_top-bottom-margin {
-    margin: 30px 0;
-  }
-
-  .two-columns__span-accent {
-    margin: 30px 0;
-    padding: 0;
-    line-height: 34px;
-    font-size: 24px;
+    line-height: 1.15;
+    font-size: 60px;
     font-weight: 600;
   }
 
+  .section-title_place_digits {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
 
+  .section-subtitle {
+    margin: 0;
+    padding: 0;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .section-title_place_digits {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+  }
+
+  .section-subtitle_place_digits {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  /* секция digits */
+
+  .digits {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+  }
 
 
 
