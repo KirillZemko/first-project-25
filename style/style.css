@@ -3,14 +3,14 @@
 }
 
 header, section, main, footer, div {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 h1, h2, h3, h4, h5, h6, p, span, section {
   margin: 0;
   padding: 0;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .page {
@@ -29,26 +29,16 @@ h1, h2, h3, h4, h5, h6, p, span, section {
     min-height: 600px;
     max-height: 756px; /* выше установили ограничения для секции */
     position: relative;
+
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
   }
 
-  .header__title {
-    margin: 0;
-    padding: 0;
-    line-height: 96px;
-    font-size: 102px;
-    font-weight: 600;
-    border: 1px  solid red;
-  }
-
-  .header__title_place_header {
-    width: 730px;
-    margin-left: 64px;
-  }
-
   .logo {
+    background-image: url(../images/logo_place_header.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 226px;
     height: 32px;
     z-index: 2;
@@ -60,6 +50,20 @@ h1, h2, h3, h4, h5, h6, p, span, section {
     left: 64px;
   }
 
+  .header__title {
+    margin: 0;
+    padding: 0;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: 600;
+    /* border: 1px  solid red; */
+  }
+
+  .header__title_place_header {
+    width: 730px;
+    margin-left: 64px;
+  }
+
   .header__subtitle {
     margin: 0;
     padding: 0;
@@ -68,20 +72,20 @@ h1, h2, h3, h4, h5, h6, p, span, section {
     font-weight: normal;
   }
 
+  .header__subtitle_place_header {
+    position: absolute;
+    width: 388px;
+    left: 64px;
+    bottom: 30px;
+    /* border: 1px solid red; */
+  }
+
   .header__link {
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
     color: #2f80ed;;
     text-decoration: none;
-  }
-
-  .header__subtitle_place_header {
-    position: absolute;
-    width: 388px;
-    left: 64px;
-    bottom: 30px;
-    border: 1px solid red;
   }
 
   .header__main-illustration {
@@ -112,12 +116,15 @@ h1, h2, h3, h4, h5, h6, p, span, section {
   /* секция description */
 
   .description {
-    width: 80%;
     display: flex;
-    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 100px 0;
   }
 
     .two-columns {
+      width: 80%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -144,10 +151,11 @@ h1, h2, h3, h4, h5, h6, p, span, section {
       line-height: 34px;
       font-size: 24px;
       font-weight: normal;
+      padding-bottom: 30px;
     }
 
-    .two-columns__paragraph_top-bottom-margin {
-      margin: 30px 0;
+    .two-columns__paragraph:last-child {
+      padding-bottom: 0;
     }
 
     .two-columns__span-accent {
@@ -215,10 +223,6 @@ h1, h2, h3, h4, h5, h6, p, span, section {
   z-index: 1;
   }
 
-  .table__cell {
-
-  }
-
   .table__cell_place_feynman {
     margin-top: 60px;
     width: 250px;
@@ -227,7 +231,6 @@ h1, h2, h3, h4, h5, h6, p, span, section {
   .table__heading {
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
     line-height: 1.15;
     font-size: 24px;
     font-weight: 600;
@@ -236,6 +239,7 @@ h1, h2, h3, h4, h5, h6, p, span, section {
   .table__text {
     margin: 0;
     padding: 0;
+    margin-top: 20px;
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
@@ -246,8 +250,7 @@ h1, h2, h3, h4, h5, h6, p, span, section {
   .feynman {
     margin: 0;
     padding: 0;
-    padding-top: 100px;
-    height: 890px;
+    margin-top: 100px;
     min-height: 890px;
     max-height: 756px; /* выше установили ограничения для секции */
     position: relative;
@@ -267,6 +270,7 @@ h1, h2, h3, h4, h5, h6, p, span, section {
     font-weight: 600;
     width: 648px;
     z-index: 1;
+    margin-top: 100px;
   }
 
   .feynman__subtitle {
@@ -306,7 +310,7 @@ h1, h2, h3, h4, h5, h6, p, span, section {
   /* блок kaufman */
 
   .kaufman {
-    background-color: #000000;
+    background-color: #1f1f1f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -347,7 +351,7 @@ h1, h2, h3, h4, h5, h6, p, span, section {
   /* footer */
 
   .footer {
-    background-color: #000000;
+    background-color: #1f1f1f;
     min-height: 350px;
     color: #f2f2f2;
     padding: 60px 0 40px 0;
