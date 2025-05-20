@@ -38,3 +38,11 @@
 @import url(../blocks/table/__cell/_place/table__cell_place_digits.css);
 @import url(../blocks/table/__heading/table__heading.css);
 @import url(../blocks/table/__text/table__text.css);
+/* feynman */
+@import url(../blocks/feynman/feynman.css);
+@import url(../blocks/feynman/__title/feynman__title.css);
+@import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
+@import url(../blocks/feynman/__link/feynman__link.css);
+@import url(../blocks/feynman/__link/_place/feynman__link_place_feynman.css);
+@import url(../blocks/feynman/__illustration/feynman__illustration.css);
+@import url(../blocks/feynman/__illustration/_place/feynman__illustration_place_feynman.css);

@@ -1,0 +1,16 @@
+.feynman {
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+  min-height: 890px;
+  max-height: 756px; /* выше установили ограничения для секции */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  background-color: #f2f2f2;
+  text-align: center;
+}

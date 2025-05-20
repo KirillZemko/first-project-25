@@ -22,66 +22,6 @@ h1, h2, h3, h4, h5, h6, p, span, section {
 
   /* блок feynman */
 
-  .feynman {
-    margin: 0;
-    padding: 0;
-    margin-top: 100px;
-    min-height: 890px;
-    max-height: 756px; /* выше установили ограничения для секции */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-
-    background-color: #f2f2f2;
-    text-align: center;
-  }
-
-  .feynman__title {
-    line-height: 1.15;
-    font-size: 120px;
-    font-weight: 600;
-    width: 648px;
-    z-index: 1;
-    margin-top: 100px;
-  }
-
-  .feynman__subtitle {
-    line-height: 51px;
-    font-size: 36px;
-    font-weight: normal;
-    margin-top: 70px;
-    z-index: 1;
-  }
-
-  .feynman__link {
-    line-height: 51px;
-    font-size: 36px;
-    font-weight: normal;
-    text-decoration: none;
-    color: #2f80ed;
-    z-index: 1;
-  }
-
-  .feynman__link_place_feynman {
-    position: absolute;
-    right: 48px;
-    top: 445px
-  }
-
-  .feynman__illustration {
-    width: 867px;
-    height: 637px;
-  }
-
-  .feynman__illustration_place_feynman {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
   /* блок kaufman */
 
   .kaufman {
