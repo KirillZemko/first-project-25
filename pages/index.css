@@ -1,4 +1,5 @@
 @import url(../vendor/normalize.css);
+@import url(../blocks/rotation/rotation.css);
 /* page */
 @import url(../blocks/page/page.css);
 /* logo */
@@ -22,6 +23,14 @@
 @import url(../blocks/content/content.css);
 /* description */
 @import url(../blocks/description/description.css);
+/* techniques */
+@import url(../blocks/techniques/techniques.css);
+/* cards */
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__item/cards__item.css);
+@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__title/cards__title.css);
+@import url(../blocks/cards/__description/cards__description.css);
 /* two-columns */
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/two-columns/__brief/two-columns__brief.css);
@@ -35,6 +44,8 @@
 @import url(../blocks/section-title/_place/section-title_place_digits.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/section-subtitle/_place/section-subtitle_place_digits.css);
+@import url(../blocks/section-title/_place/section-title_place_techniques.css);
+@import url(../blocks/section-subtitle/_place/section-subtitle_place_techniques.css);
 @import url(../blocks/section-title/_theme/section-title_theme_dark.css);
 @import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 /* table */
