@@ -5,6 +5,8 @@
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/logo_place_header.css);
 @import url(../blocks/logo/_place/logo_place_footer.css);
+/* link */
+@import url(../blocks/link-hover-opacity/link-hover-opacity.css);
 /* header */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
